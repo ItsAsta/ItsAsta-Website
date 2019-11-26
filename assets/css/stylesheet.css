@@ -1,0 +1,75 @@
+html, body {
+    background-color: #1a1e23;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Simp, Bebas, serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: Simp;
+    src: local('Simplifica Regular'), local('Simplifica');
+    src: url(fonts/simplifica.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Bebas;
+    src: local('Bebas Neue'), local('Bebas Neue');
+    src: url(fonts/BebasNeue.ttf) format('truetype');
+}
+
+h1 {
+    font-family: Bebas, serif;
+    font-size: 38px;
+    letter-spacing: 3em;
+    text-indent: 3em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: 0.6em;
+}
+
+.main-container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.social-media {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon-container a {
+    transform: scale(1.5);
+    text-decoration: none;
+    color: #9b9b9b;
+    -webkit-transition: color 0.2s, transform 0.2s;
+    position: absolute;
+}
+
+.icon-container a:hover {
+    color: #ffffff;
+    transform: scale(2);
+    -webkit-transition: color 0.2s, transform 0.2s;
+    position:absolute;
+    z-index: 50;
+}
+
+.icon-container {
+    width: 10px;
+    height: 10px;
+    overflow: visible;
+    display: inline-block;
+    margin: 10px;
+}
+
+.separator {
+    border: 1px solid white;
+    width: 600px;
+}
