@@ -13,16 +13,16 @@ html, body {
 @font-face {
     font-family: Simp;
     src: local('Simplifica Regular'), local('Simplifica');
-    src: url(fonts/simplifica.ttf) format('truetype');
+    src: url(../fonts/simplifica.ttf) format('truetype');
 }
 
 @font-face {
     font-family: Bebas;
     src: local('Bebas Neue'), local('Bebas Neue');
-    src: url(fonts/BebasNeue.ttf) format('truetype');
+    src: url(../fonts/BebasNeue.ttf) format('truetype');
 }
 
-h1 {
+.main-container h1 {
     font-family: Bebas, serif;
     font-size: 38px;
     letter-spacing: 3em;
@@ -30,14 +30,20 @@ h1 {
     margin-bottom: 0;
 }
 
-h2 {
+.main-container h2 {
     font-size: 14px;
     letter-spacing: 0.6em;
 }
 
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .main-container {
     text-align: center;
-    margin-top: 20%;
 }
 
 .social-media {
@@ -59,6 +65,7 @@ h2 {
     -webkit-transition: color 0.2s, transform 0.2s;
     position:absolute;
     z-index: 50;
+    cursor: pointer;
 }
 
 .icon-container {
@@ -72,4 +79,21 @@ h2 {
 .separator {
     border: 1px solid white;
     width: 600px;
+}
+
+.text-header {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.text-header h1 {
+    font-family: Bebas, serif;
+    letter-spacing: 0.2em;
+    display: inline-block;
+}
+
+.text-header i {
+    font-size: 28px;
+    margin-right: 10px;
 }
